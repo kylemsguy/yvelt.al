@@ -42,9 +42,9 @@ $(function() {
 	// detect if mobile
 	if(isMobile.any()){
 		console.log("Is mobile");
-		var yveltal = $('#yveltal');
-		yveltal.removeAttr("height");
-		yveltal.attr("width", "100%");
+		var yveltal = document.findViewById("yveltal"); // $('#yveltal');
+		yveltal.removeAttribute("height");
+		yveltal.setAttribute("width", "100%");
 	} else {
 		console.log("Is desktop");
 	}
